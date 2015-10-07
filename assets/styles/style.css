@@ -1,0 +1,543 @@
+/* Main page styles */
+
+html,body {
+    color: #EEE;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+body > nav {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    font-size: .6rem;
+}
+
+.portrait body > nav {
+    font-size: 1.5rem;
+}
+
+body > nav > ul {
+    margin: 0;
+    padding: 0;
+    height: 2em;
+}
+
+body > .nav_animation,body > nav > ul > li {
+    display: block;
+    width: 5rem;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    padding: .2em .5em;
+}
+
+.portrait body > .nav_animation,.portrait body > nav > ul > li {
+    width: 10rem;
+}
+
+body > nav > ul > li:nth-child(1) {
+    background: #2980B9;
+    color: #EEE;
+    left: 5rem;
+}
+
+body > nav > ul > li:nth-child(2),body > nav > ul > li:nth-child(3) {
+    background: #C0392B;
+    color: #EEE;
+    right: 5rem;
+}
+body > nav > ul > li:nth-child(3) {
+    background: #ECF0F1;
+    color: #666;
+}
+body > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+/* User Panel */
+
+body > .userPanel {
+    background: #ECF0F1;
+    color: #666;
+}
+
+body > .userPanel > nav {
+
+}
+body > .userPanel > nav > ul {
+    padding: 0;
+    margin: 0;
+}
+
+body > .userPanel > nav > ul > li {
+    padding: .5em;
+    margin: .2em;
+    margin-right: 0;
+    background: #95A5A6;
+    color: #FFF;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1; 
+    cursor: pointer;
+    font-size: .8rem;
+}
+
+#add > .wrapper > .photo {
+    display: block;
+    width: 5.5rem;
+    height: 5.5rem;
+    border: 1px solid rgba(0,0,0,.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;;
+}
+#add > .wrapper > input {
+    font-size: 1rem;
+    position: absolute;
+    right: 1rem;
+    display: block;
+    left: 6rem;
+    border: 1px solid rgba(0,0,0,.1);
+    box-sizing: border-box;
+    width: 23.5rem;
+    padding-left: .5rem;
+    color: #444;
+}
+/* Login */
+
+body > .login {
+    background: #C0392B;
+    color:#EEE;
+    text-align:center;
+}
+
+body > .login > h1 {
+    text-align: center;
+}
+
+
+/* Main */
+
+body > .main {
+    background: #2980B9;
+    font-size: 2rem;
+}
+
+.portrait body > .main > .wrapper,.portrait #add > .wrapper {
+    width: 80%;
+}
+a.button {
+    background: rgba(255,255,255,.2);
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    zoom: 1;
+    *display: inline;
+}
+
+.wrapper > a.button {
+    display: block;
+    width: 8rem;
+    margin: 4rem auto 0 auto;
+    line-height: 1.5em;
+}
+
+/* Navigation Animation */
+body > .nav_animation,.portrait body > .nav_animation {
+    position: fixed;
+    z-index: 999;
+    bottom:0;
+    width: auto;
+}
+
+/* First message box */
+body > p {
+    position: fixed;
+    left:0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    margin: 0;
+    font-size: 1.5rem;
+    margin-top: -1.5rem;
+}
+
+body > p > span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background: #2C3E50;
+    line-height: 2em;
+    text-align: center;
+}
+
+
+/* Select Styles */
+.selector {
+    /*background: rgba(255,255,255,.1);*/
+    padding: .2em .5em;
+    cursor: pointer;
+    border-bottom: 1px dashed rgba(255,255,255,.5);
+}
+.selector:hover {
+    border-bottom-width: 3px;
+    
+}
+.selector_list {
+   /* box-shadow: 0 0 0 9000px rgba(0,0,0,.8);*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+}
+.selector_list > div > span {
+    display: block;
+    background-color: #1ABC9C;
+    border: 1px solid #16A085;
+    font-size: .5em;
+    line-height: 2em;
+    cursor: pointer;
+    padding-left: 2em;
+    text-align: left;
+    position: relative;
+}
+.portrait .selector_list > div > span {
+    font-size: .9em;
+}
+.selector_list > div > span:before {
+    position: absolute;
+    left: .5em;
+    top:.5em;
+    display: none;
+    color:rgba(255,255,255,.3);
+}
+.selector_list > div > span.selected:before {
+    display: block;
+}
+.selector_list > div > span.selected {
+    background-color: #27AE60;
+    color:#DDD;
+}
+.selector_list > div {
+    position: absolute;
+}
+
+select.inline {
+    background: rgba(255,255,255,.1);
+    border: rgba(255,255,255,.2) 1px solid;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1; /* Fix for IE7 */
+    *display: inline;
+    *-webkit-appearance: initial;
+    font-size: 1em;
+    color: #FFF;
+}
+
+/* One at Time */
+.oneAT {
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1; /* Fix for IE7 */
+    *display: inline; /* Fix for IE7 */
+    position: relative;
+    text-align: left;
+}
+.oneAT > div.container {
+    position: relative;
+}
+.oneAT > input,.oneAT > div > input {
+    font-size: 1.2rem;
+    background: transparent;
+    border: none;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    padding: .0em 1em;
+    margin:0;
+    box-sizing:border-box;
+    border-radius: 0;
+}
+.oneAT > div > span.icon-next {
+    position: absolute;
+    line-height: 1.2em;
+    right: .4em;
+    cursor: pointer;
+    display: none;
+}
+.oneAT > div.text {
+    font-size: 1em;
+    background: none;
+    position: relative;
+    overflow: hidden;
+}
+.oneAT > div.text > span {
+    display: block;
+}
+.oneAT > span.status {
+    background: rgba(255,255,255,.5);
+    display: block;
+    width: 0px;
+    height: 5px;
+    bottom: 0;;
+}
+.oneAT > span.status::before {
+    content: '';
+    background-color: rgba(255,255,255,.2);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 5px;
+    bottom: 0;
+}
+.oneAT > div > *:focus {
+    outline: none;
+}
+.oneAT > span.waiting {
+    height: 1rem;
+    width: 4rem;
+    display: block;
+    margin-left: -2rem;
+    -webkit-animation: oneATLoading 1s  0 infinite alternate;
+    -o-animation: oneATLoading 1s  0 infinite alternate;
+    animation: oneATLoading 1s  0 infinite alternate;
+    position: absolute;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes oneATLoading {
+    from {left: 0;}
+    to {left: 100%;}
+}
+
+/* Standard syntax */
+@keyframes oneATLoading {
+    from {left: 0;}
+    to {left: 100%;}
+}
+/* OneAT login */
+
+.login .oneAT {
+    margin-top: 4rem;
+}
+.login .oneAT > * {
+    background-color: #E74C3C;
+    color:#FFF;
+}
+.login .oneAT > * > * {
+    color: #FFF;
+}
+.login .oneAT ::input-placeholder{
+    color:rgba(255,255,255,.7);
+}
+.login .oneAT ::-webkit-input-placeholder{
+    color:rgba(255,255,255,.7);
+}
+.login .oneAT ::-ms-input-placeholder{
+    color:rgba(255,255,255,.7);
+}
+.login .oneAT :-moz-placeholder{
+    color:rgba(255,255,255,.7);
+}
+.login .oneAT ::-moz-placeholder{
+    color:rgba(255,255,255,.7);
+}
+#add > .wrapper > .map {
+    position: absolute;
+    top: 1.5rem;
+    left: 6rem;
+    right: .5rem;
+    height: 10rem;
+    border: 1px solid rgba(0,0,0,.2);
+    line-height: initial;
+}
+#add > .wrapper > .photo > span.icon-photo {
+    font-size: 4.5rem;
+    color: rgba(0,0,0,.2);
+    position: absolute;
+    left: .5rem;
+    top: .5rem;
+}
+#add > .wrapper > .photo > span:not(.icon-photo) {
+    position: absolute;
+    line-height: 2rem;
+    top: 1.75rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #3498DB;
+    color: #FFF;
+}
+
+#add > .wrapper > .selector_list {
+    font-size: 1.5rem;
+    color: #eee;
+}
+#add > .wrapper > .selector {
+    border-bottom-color: rgba(0,0,0,.3);
+    position: absolute;
+    top: 6rem;
+    line-height: 1rem;
+    text-align: center;
+    width: 5.5rem;
+    box-sizing: border-box;
+    left: 0;
+}
+#add > .wrapper > .date {
+    position: absolute;
+    left: 0;
+    top: 8rem;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+#add > .wrapper > .date > input {
+    width: 1.2rem;
+    font-size: 1rem;
+    text-align: center;
+    color: #444;
+}
+#add > .wrapper > .date > .y {
+    width: 2.3rem;
+}
+#add > .wrapper > a.button {
+    position: absolute;
+    top: 6.5rem;
+    width: 5.5rem;
+    text-align: center;
+    background: #3498DB;
+    color: #FFF;
+}
+#add > .wrapper > .photo > input {
+    display: none;
+}
+#add > .wrapper > .mapinfo {
+    position: absolute;
+    right: .5rem;
+    background: #7F8C8D;
+    color: #FFF;
+    top: 1.5rem;
+    padding: .2rem;
+}
+body > .userPanel > nav > ul > li.selected {
+    background: #2980B9;
+}
+a.button.delete {
+    background: #E74C3C;
+    color: #FFF;
+}
+#show, #confirm {
+    top: 1rem;
+}
+body > .main > .wrapper, #add > .wrapper, #show, #confirm {
+    width: 30rem;
+    position: relative;
+    top: 4rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 4rem;
+}
+#add > .wrapper, #show, #confirm,body > .main > .wrapper:last-child {
+    text-align: left;
+    height: auto;
+    line-height: 1rem;
+    font-size: 1rem;
+    top: 2.5rem;
+    overflow: auto;
+    bottom: 2rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -15rem;
+}
+body > .main > .wrapper:last-child {
+    top: 3.5rem;
+    
+}
+#show > .result, #confirm > .result, .main > .wrapper > .result {
+    position: relative;
+    height: 5rem;
+    margin-bottom: .5rem;
+    border: 1px solid;
+}
+#show > .result > span, #confirm > .result > span, .main > .wrapper > .result > span {
+    position: absolute;
+    display: block;
+}
+#show > .result > .nome, #confirm > .result > .nome, .main > .wrapper > .result > .nome {
+    font-size: 1.3rem;
+    left: 5rem;
+    top: .5rem;
+}
+#show > .result > .position, #confirm > .result > .position, .main > .wrapper > .result > .position {
+    font-size: .8rem;
+    left: 5rem;
+    top: 1.8rem;
+}
+#show > .result > .image, #confirm > .result > .image, .main > .wrapper > .result > .image {
+    height: 4rem;
+    width: 4rem;
+    top: .5rem;
+    left: .5rem;
+    background: center center;
+    background-size: cover;
+}
+#show > .result > a.button, #confirm > .result > a.button {
+    position: absolute;
+    padding: .2em;
+    right: .5rem;
+    bottom: .5rem;
+}
+#confirm > .result > a.button.appr {
+    right: 5rem;
+    background: #2ECC71;
+    color: #FFF;
+}
+body > .userPanel > .uploadProgress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.7);
+    z-index: 99;
+}
+body > .userPanel > .uploadProgress > .bar {
+    height: 3px;
+    background: #3498DB;
+    position: absolute;
+    top: 50%;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background:#DDD;
+}
+::-webkit-scrollbar-thumb {
+    background: #3498DB;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #2980B9;
+}
